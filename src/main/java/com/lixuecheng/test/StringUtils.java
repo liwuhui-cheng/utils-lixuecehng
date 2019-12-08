@@ -27,7 +27,20 @@ public class StringUtils {
 		}		
 	}
 	
-	
+	/**
+	 * 
+	 * 	验证邮箱格式是否通过
+	 * @param str
+	 * @return
+	 */
+	public static boolean isEmail(String str) {
+		
+		String pattern = "^\\w+@\\w+\\.[a-zA-Z]{2,3}$";
+		Pattern compile = Pattern.compile(pattern);
+		Matcher matcher = compile.matcher(str);
+		return matcher.matches();
+	}
+
 	
 
 	/**
