@@ -29,7 +29,7 @@ public class StringUtils {
 	
 	/**
 	 * 
-	 * 	验证邮箱格式是否通过
+	 * 	验证邮箱格式是否通过是
 	 * @param str
 	 * @return
 	 */
