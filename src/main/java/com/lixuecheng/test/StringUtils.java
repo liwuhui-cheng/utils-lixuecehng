@@ -166,5 +166,16 @@ public class StringUtils {
 		return new String(word,"GBK");
 		
 	}
+	
+	public    static     boolean     judgeTelephoneIsOk(String src){
+		   
+		String   re="^(1)\\d{10}";
+		Pattern compile = Pattern.compile(re);
+		
+		Matcher matcher = compile.matcher(src);
+		
+		boolean find = matcher.find();
+		return  find;
+	}
 
 }
