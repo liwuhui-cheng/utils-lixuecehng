@@ -8,7 +8,7 @@ public class HtmlUtiles {
 	 * @return
 	 */
 	
-	private  static   String htmlspecialchars(String str) {
+	public   static   String   htmlspecialchars(String str) {
 		str = str.replaceAll("&", "&amp;");
 		str = str.replaceAll("<", "&lt;");
 		str = str.replaceAll(">", "&gt;");
